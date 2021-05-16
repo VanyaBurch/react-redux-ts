@@ -23,7 +23,7 @@ const TodoLIst: React.FC = () => {
             {todos.map(todo =>
                 <div key={todo.id}>{todo.id} - {todo.title}</div>
             )}
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', marginTop: 10 }}>
                 {pages.map(p =>
                     <div
                         onClick={ () => setTodoPage(p) }
